@@ -1,10 +1,11 @@
 package model.triangle;
 
+import model.ISquare;
 import model.Shape;
 
 import java.util.Objects;
 
-public class Triangle extends Shape {
+public class Triangle extends Shape implements ISquare {
 
     double firstSide;
     double secondSide;

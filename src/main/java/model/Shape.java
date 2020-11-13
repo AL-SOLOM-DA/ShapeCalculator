@@ -9,8 +9,6 @@ public abstract class Shape {
 
     protected abstract double getPerimeter();
 
-    protected abstract double getSquare();
-
     public String getName() {
         return name;
     }
