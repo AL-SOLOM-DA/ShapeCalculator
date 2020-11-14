@@ -1,4 +1,4 @@
-package quadrangle;
+package model.quadrangle;
 
 import model.Shape;
 

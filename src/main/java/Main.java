@@ -3,9 +3,9 @@ import model.triangle.EquilateralTriangle;
 import model.triangle.IsoscelesTriangle;
 import model.triangle.RectangularTriangle;
 import model.triangle.Triangle;
-import quadrangle.Parallelogram;
-import quadrangle.Quadrangle;
-import quadrangle.Trapeze;
+import model.quadrangle.Parallelogram;
+import model.quadrangle.Quadrangle;
+import model.quadrangle.Trapeze;
 
 public class Main {
     public static void main(String[] args) {
