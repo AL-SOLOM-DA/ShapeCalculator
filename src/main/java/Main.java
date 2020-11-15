@@ -7,6 +7,9 @@ import model.quadrangle.Parallelogram;
 import model.quadrangle.Quadrangle;
 import model.quadrangle.Trapeze;
 
+import java.util.Enumeration;
+import java.util.PriorityQueue;
+
 public class Main {
     public static void main(String[] args) {
         Shape[] shapes = new Shape[7];

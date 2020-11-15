@@ -21,8 +21,4 @@ public class RectangularTriangle extends Triangle {
         builder.append("\nПлощадь: ").append(getSquare());
         return builder.toString();
     }
-
-    public double getHypotenuse(double firstCathet, double secondCathet) {
-        return Math.sqrt(Math.pow(firstCathet, 2) + Math.pow(secondCathet, 2));
-    }
 }
