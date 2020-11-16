@@ -1,11 +1,12 @@
 package model.quadrangle;
 
 import model.ISquare;
+import model.ShapeType;
 
 public class Rectangle extends Quadrangle implements ISquare {
 
     public Rectangle(double firstSide, double secondSide) {
-        super("Прямоугольник", firstSide, secondSide, firstSide, secondSide);
+        super(ShapeType.RECTANGLE, firstSide, secondSide, firstSide, secondSide);
     }
 
     @Override

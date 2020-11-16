@@ -1,5 +1,6 @@
 package model.quadrangle;
 
+import model.ShapeType;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -8,22 +9,22 @@ public class RectangleTest {
     Rectangle rectangle = new Rectangle(4, 6);
 
     @Test
-    public void getName() {
+    public void getNameTest() {
         Assert.assertEquals("Прямоугольник", rectangle.getName());
     }
 
     @Test
-    public void getPerimeter() {
+    public void getPerimeterTest() {
         Assert.assertEquals(20, rectangle.getPerimeter(), 0);
     }
 
     @Test
-    public void getSquare() {
+    public void getSquareTest() {
         Assert.assertEquals(24, rectangle.getSquare(), 0);
     }
 
     @Test
-    public void testToString() {
+    public void toStringTest() {
         String expected = """
                 Прямоугольник
                 Первая сторона: 4.0
