@@ -1,8 +1,10 @@
 package model.triangle;
 
+import model.ShapeType;
+
 public class RectangularTriangle extends Triangle {
     public RectangularTriangle(double firstCathet, double secondCathet) {
-        super("Прямоугольный треугольник", firstCathet, secondCathet,
+        super(ShapeType.RECTANGULAR_TRIANGLE, firstCathet, secondCathet,
                 Math.hypot(firstCathet, secondCathet));
     }
 

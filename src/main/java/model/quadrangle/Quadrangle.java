@@ -5,17 +5,14 @@ import model.ShapeType;
 
 public class Quadrangle extends Shape {
 
-    public ShapeType type;
-
     double firstSide;
     double secondSide;
     double thirdSide;
     double fourthSide;
 
-    protected Quadrangle(String name, double firstSide, double secondSide,
+    protected Quadrangle(ShapeType type, double firstSide, double secondSide,
                          double thirdSide, double fourthSide) {
-        super(name);
-        this.type = ShapeType.QUADRANGLE;
+        super(type);
         this.firstSide = firstSide;
         this.secondSide = secondSide;
         this.thirdSide = thirdSide;
@@ -23,7 +20,7 @@ public class Quadrangle extends Shape {
     }
 
     public Quadrangle(double firstSide, double secondSide, double thirdSide, double fourthSide) {
-        this("Четырёхугольник", firstSide, secondSide, thirdSide, fourthSide);
+        this(ShapeType.QUADRANGLE, firstSide, secondSide, thirdSide, fourthSide);
     }
 
     @Override

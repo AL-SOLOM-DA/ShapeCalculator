@@ -4,34 +4,32 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class TriangleTest {
 
     Triangle triangle;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         triangle = new Triangle(4, 5, 6);
     }
 
     @Test
-    public void getName() {
+    public void getNameTest() {
         Assert.assertEquals("Треугольник", triangle.getName());
     }
 
     @Test
-    public void getPerimeter() {
+    public void getPerimeterTest() {
         Assert.assertEquals(15, triangle.getPerimeter(), 0);
     }
 
     @Test
-    public void getSquare() {
+    public void getSquareTest() {
         Assert.assertEquals(9.921567416492215, triangle.getSquare(), 0);
     }
 
     @Test
-    public void testToString() {
+    public void toStringTest() {
         String expected = """
                 Треугольник
                 Первая сторона: 4.0
@@ -43,7 +41,7 @@ public class TriangleTest {
     }
 
     @Test
-    public void testEquals() {
+    public void equalsTest() {
         Triangle triangle1 = new Triangle(4, 5, 6);
         Triangle triangle2 = new Triangle(6, 5, 4);
         Assert.assertEquals(triangle, triangle1);

@@ -2,6 +2,7 @@ package model.triangle;
 
 import model.ISquare;
 import model.Shape;
+import model.ShapeType;
 import model.utils.ValidateUtil;
 
 import java.util.Objects;
@@ -12,8 +13,8 @@ public class Triangle extends Shape implements ISquare {
     protected double secondSide;
     protected double thirdSide;
 
-    protected Triangle(String name, double firstSide, double secondSide, double thirdSide) {
-        super(name);
+    protected Triangle(ShapeType type, double firstSide, double secondSide, double thirdSide) {
+        super(type);
         validate(firstSide, secondSide, thirdSide);
         this.firstSide = firstSide;
         this.secondSide = secondSide;
@@ -21,7 +22,7 @@ public class Triangle extends Shape implements ISquare {
     }
 
     public Triangle(double firstSide, double secondSide, double thirdSide) {
-        this("Треугольник", firstSide, secondSide, thirdSide);
+        this(ShapeType.TRIANGLE, firstSide, secondSide, thirdSide);
     }
 
     @Override
